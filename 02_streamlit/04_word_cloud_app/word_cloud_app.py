@@ -44,7 +44,7 @@ st.title("Word Cloud Generator")
 st.subheader("📁 Upload a pdf, docx or text file to generate a word cloud")
 
 uploaded_file = st.file_uploader("Choose a file", type=["txt", "pdf", "docx"])
-st.set_option('deprecation.showPyplotGlobalUse', False)
+#st.set_option('deprecation.showPyplotGlobalUse', False)
 
 if uploaded_file:
     file_details = {"FileName": uploaded_file.name, "FileType": uploaded_file.type, "FileSize": uploaded_file.size}
